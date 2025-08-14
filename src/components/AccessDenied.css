@@ -1,0 +1,174 @@
+.access-denied-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.access-denied-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  max-width: 500px;
+  width: 100%;
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.access-denied-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.access-denied-card h1 {
+  color: #e74c3c;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.access-denied-card p {
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.access-denied-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.back-btn, .home-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  min-width: 120px;
+}
+
+.back-btn {
+  background: #95a5a6;
+  color: white;
+}
+
+.back-btn:hover {
+  background: #7f8c8d;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(149, 165, 166, 0.4);
+}
+
+.home-btn {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+}
+
+.home-btn:hover {
+  background: linear-gradient(135deg, #2980b9, #1f5f8b);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .access-denied-container {
+    padding: 15px;
+  }
+  
+  .access-denied-card {
+    padding: 30px 20px;
+  }
+  
+  .access-denied-card h1 {
+    font-size: 2rem;
+  }
+  
+  .access-denied-card p {
+    font-size: 1rem;
+  }
+  
+  .access-denied-icon {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .access-denied-card {
+    padding: 25px 15px;
+  }
+  
+  .access-denied-card h1 {
+    font-size: 1.8rem;
+  }
+  
+  .access-denied-card p {
+    font-size: 0.9rem;
+  }
+  
+  .access-denied-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .back-btn, .home-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .access-denied-card {
+    padding: 20px 12px;
+  }
+  
+  .access-denied-card h1 {
+    font-size: 1.6rem;
+  }
+  
+  .access-denied-card p {
+    font-size: 0.85rem;
+  }
+  
+  .access-denied-icon {
+    font-size: 2.5rem;
+  }
+  
+  .back-btn, .home-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    min-width: 100px;
+  }
+} 

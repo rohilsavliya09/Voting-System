@@ -1,0 +1,132 @@
+.voting-card {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #333;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.voting-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  background: #2c3e50;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.card-id {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.card-body {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.photo-section {
+  flex: 0 0 120px;
+}
+
+.voter-photo {
+  width: 120px;
+  height: 144px;
+  object-fit: cover;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background: #f5f5f5;
+}
+
+.details-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detail-row {
+  display: flex;
+  min-height: 22px;
+}
+
+.label {
+  font-weight: 600;
+  width: 70px;
+  color: #555;
+  font-size: 0.85rem;
+}
+
+.value {
+  flex: 1;
+  padding-left: 8px;
+  font-size: 0.85rem;
+}
+
+.address-value {
+  white-space: pre-line;
+  line-height: 1.4;
+}
+
+.email-value {
+  word-break: break-all;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+}
+
+.expiry-date {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.expiry-label {
+  font-weight: 600;
+  color: #555;
+  font-size: 0.8rem;
+}
+
+.expiry-value {
+  font-weight: 500;
+  color: #2c3e50;
+  font-size: 0.8rem;
+}
+
+.official-stamp {
+  margin-left: 15px;
+}
+
+.stamp-placeholder {
+  padding: 5px 10px;
+  border: 1px dashed #c00;
+  color: #c00;
+  font-weight: bold;
+  border-radius: 3px;
+  transform: rotate(5deg);
+  font-size: 0.7rem;
+}
