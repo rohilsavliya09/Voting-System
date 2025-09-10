@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Voting System
 
 A modern, secure online voting platform with role-based access control.
@@ -125,4 +125,3 @@ The system now provides complete role-based access control where users can only 
 =======
 # Voting-System
 Voting System is an online platform for conducting any type of election or poll. Users can securely log in as voters or candidates, create elections, cast votes, and view real-time results. Supports multiple elections, stores data in MongoDB, and is deployed locally.
->>>>>>> bcd0a8d487dfa1f20f885fd5567dbce17a6a06b7
